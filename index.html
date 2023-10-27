@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body, html{
+        body,
+        html {
             margin: 0;
             padding: 0;
         }
-        body{
-            overflow:hidden;
+
+        body {
+            overflow: hidden;
             height: 100%;
-            position: fixed;    
-            top:0;
-            left:0;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
-        .scroll{
-            
+
+        .scroll {
+
             border: 5px solid black;
-            overflow:hidden;
+            overflow: hidden;
         }
-        .scroll{
+
+        .scroll {
             transition: transform 1.5s;
         }
 
-        #scrollbar{
+        #scrollbar {
             height: 100px;
             width: 100%;
             position: absolute;
@@ -34,108 +39,265 @@
             top: 0;
             background-color: black;
         }
-        #scrollbar:hover{
-            cursor:pointer;
+
+        #scrollbar:hover {
+            cursor: pointer;
         }
-        #scrollbar-wrapper{
-            padding:0px 2px;
+
+        #scrollbar-wrapper {
+            padding: 0px 2px;
             position: fixed;
             right: 0;
-            top:0;
+            top: 0;
             height: 100%;
             width: 15px;
-            
+
             background-color: grey;
         }
-        #scrollbar-wrapper2{
+
+        #scrollbar-wrapper2 {
             position: relative;
             height: 100%;
             width: 100%;
         }
-        
     </style>
 </head>
+
 <body>
     <div class="smooth-wrapper">
         <div class="scroll">
             <p>
                 ¿Qué es Lorem Ipsum?<br>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-            <br>
-            ¿Por qué lo usamos?<br>
-            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-            <br>
-        
-            ¿De dónde viene?<br>
-            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
-            <br>
-            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
-            <br>
-            ¿Dónde puedo conseguirlo?<br>
-            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
-                </p>
-                <p>
-                    ¿Qué es Lorem Ipsum?<br>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-            <br>
-            ¿Por qué lo usamos?<br>
-            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-            <br>
-        
-            ¿De dónde viene?<br>
-            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
-            <br>
-            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
-            <br>
-            ¿Dónde puedo conseguirlo?<br>
-            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
-                </p>
-                <p>
-                    ¿Qué es Lorem Ipsum?<br>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-            <br>
-            ¿Por qué lo usamos?<br>
-            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-            <br>
-        
-            ¿De dónde viene?<br>
-            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
-            <br>
-            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
-            <br>
-            ¿Dónde puedo conseguirlo?<br>
-            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
-                </p>
-                <p>
-                    ¿Qué es Lorem Ipsum?<br>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-            <br>
-            ¿Por qué lo usamos?<br>
-            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-            <br>
-        
-            ¿De dónde viene?<br>
-            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
-            <br>
-            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
-            <br>
-            ¿Dónde puedo conseguirlo?<br>
-            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
-            dasdasdsssssssssssssssssssssssssssssssssssssss sssssssssssss ssddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddd</p>
-            ¿Por qué lo usamos?<br>
-            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-            <br>
-        
-            ¿De dónde viene?<br>
-            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
-            <br>
-            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
-            <br>
-            ¿Dónde puedo conseguirlo?<br>
-            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
-            dasdasdsssssssssssssssssssssssssssssssssssssss sssssssssssss ssddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddd
-            <br>
-            asddddddddddddddddddddddddd
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum.
+                <br>
+                ¿Por qué lo usamos?<br>
+                Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de
+                un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o
+                menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido
+                aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y
+                editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem
+                Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de
+                desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras
+                veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+                <br>
+
+                ¿De dónde viene?<br>
+                Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene
+                sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo,
+                haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de
+                la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del
+                latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín,
+                descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus
+                Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo.
+                Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+                <br>
+                El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos
+                interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también
+                reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada
+                en 1914 por H. Rackham.
+                <br>
+                ¿Dónde puedo conseguirlo?<br>
+                Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en
+                alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco
+                creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada
+                avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en
+                Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador
+                verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín,
+                combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca
+                razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no
+                características del lenguaje, etc.
+            </p>
+            <p>
+                ¿Qué es Lorem Ipsum?<br>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum.
+                <br>
+                ¿Por qué lo usamos?<br>
+                Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de
+                un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o
+                menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido
+                aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y
+                editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem
+                Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de
+                desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras
+                veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+                <br>
+
+                ¿De dónde viene?<br>
+                Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene
+                sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo,
+                haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de
+                la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del
+                latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín,
+                descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus
+                Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo.
+                Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+                <br>
+                El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos
+                interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también
+                reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada
+                en 1914 por H. Rackham.
+                <br>
+                ¿Dónde puedo conseguirlo?<br>
+                Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en
+                alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco
+                creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada
+                avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en
+                Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador
+                verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín,
+                combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca
+                razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no
+                características del lenguaje, etc.
+            </p>
+            <p>
+                ¿Qué es Lorem Ipsum?<br>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum.
+                <br>
+                ¿Por qué lo usamos?<br>
+                Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de
+                un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o
+                menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido
+                aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y
+                editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem
+                Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de
+                desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras
+                veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+                <br>
+
+                ¿De dónde viene?<br>
+                Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene
+                sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo,
+                haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de
+                la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del
+                latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín,
+                descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus
+                Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo.
+                Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+                <br>
+                El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos
+                interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también
+                reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada
+                en 1914 por H. Rackham.
+                <br>
+                ¿Dónde puedo conseguirlo?<br>
+                Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en
+                alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco
+                creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada
+                avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en
+                Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador
+                verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín,
+                combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca
+                razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no
+                características del lenguaje, etc.
+            </p>
+            <p>
+                ¿Qué es Lorem Ipsum?<br>
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
+                hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
+                relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los
+                60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
+                recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones
+                de Lorem Ipsum.
+                <br>
+                ¿Por qué lo usamos?<br>
+                Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de
+                un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o
+                menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido
+                aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y
+                editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem
+                Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de
+                desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras
+                veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+                <br>
+
+                ¿De dónde viene?<br>
+                Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene
+                sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo,
+                haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de
+                la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del
+                latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín,
+                descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus
+                Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo.
+                Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+                <br>
+                El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos
+                interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también
+                reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada
+                en 1914 por H. Rackham.
+                <br>
+                ¿Dónde puedo conseguirlo?<br>
+                Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en
+                alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco
+                creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada
+                avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en
+                Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador
+                verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín,
+                combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca
+                razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no
+                características del lenguaje, etc.
+                ¿Por qué lo usamos?<br>
+                Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de
+                un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o
+                menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido
+                aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y
+                editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem
+                Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de
+                desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras
+                veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+                <br>
+
+                ¿De dónde viene?<br>
+                Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene
+                sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo,
+                haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de
+                la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del
+                latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín,
+                descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus
+                Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo.
+                Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del
+                Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+                <br>
+                El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos
+                interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también
+                reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada
+                en 1914 por H. Rackham.
+                <br>
+                ¿Dónde puedo conseguirlo?<br>
+                Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en
+                alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco
+                creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada
+                avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en
+                Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador
+                verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín,
+                combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca
+                razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no
+                características del lenguaje, etc.
         </div>
     </div>
     <div id="scrollbar-wrapper">
@@ -183,19 +345,19 @@
         const scrollbarEndLimit = realScrollWrapperHeight;
 
 
-        const smooth = (e) => {            
+        const smooth = (e) => {
             actualTopCoord = scroll.getBoundingClientRect().top;
-            if(e.wheelDelta < 0 && y <= initialLimit){
+            if (e.wheelDelta < 0 && y <= initialLimit) {
                 y += -scrollValue;
                 relativeScrolledValue += relativePercentage;
-                if(Math.abs(y) + windowHeight  > finalLimit){
-                   y = - (finalLimit - windowHeight); 
-                   relativeScrolledValue = windowHeight - 100;
+                if (Math.abs(y) + windowHeight > finalLimit) {
+                    y = - (finalLimit - windowHeight);
+                    relativeScrolledValue = windowHeight - 100;
                 }
-            }else if(e.wheelDelta > 0 && Math.abs(y) < finalLimit && y < 0){
-                y+= scrollValue;
+            } else if (e.wheelDelta > 0 && Math.abs(y) < finalLimit && y < 0) {
+                y += scrollValue;
                 relativeScrolledValue -= relativePercentage;
-                if(y>0){
+                if (y > 0) {
                     y = 0;
                     relativeScrolledValue = 0;
                 }
@@ -204,20 +366,20 @@
             scroll.style.transform = "translateY(" + y + "px)";
             //relativePercentage = (Math.abs(actualTopCoord) * 100) / initialBottomCoord;
             console.log(relativeScrolledValue)
-           //scrollbar.style.transform = "translateY(" + ((realScrollWrapperHeight*relativePercentage) / 100) + "px)";
-           scrollbar.style.transition = "transform 2s";
-           scrollbar.style.transform = "translateY(" + relativeScrolledValue + "px)"
+            //scrollbar.style.transform = "translateY(" + ((realScrollWrapperHeight*relativePercentage) / 100) + "px)";
+            scrollbar.style.transition = "transform 2s";
+            scrollbar.style.transform = "translateY(" + relativeScrolledValue + "px)"
         }
 
 
-        
+
 
         //variable para controlar si está pulsado la scrollbar
         let continueScrolling = false;
         //variable para que al pulsar sobre la scrollbar no se pongan en paralelo en las misma coordenada Y que el raton
         let scrollbarDifference = 0;
         const getStartCoordinates = (e) => {
-            continueScrolling=true;
+            continueScrolling = true;
             startCoordinates = e.clientY;
             scrollbarDifference = parseInt(e.clientY) - parseInt(scrollbar.getBoundingClientRect().top);
         }
@@ -226,26 +388,26 @@
             endCoordinates = e.clientY;
             continueScrolling = false;
         }
-        
+
         let equivalentPercentage;
         const getActualCoordinates = (e) => {
-            if(continueScrolling==true){
+            if (continueScrolling == true) {
                 let positionScrollbar = 0;
                 scrollbar.style.transitionProperty = "none";
                 scroll.style.transitionProperty = "none";
                 positionScrollbar = (parseInt(e.clientY) - scrollbarDifference);
                 //realizo las comprobaciones pertinentes
-                if(positionScrollbar > scrollbarEndLimit){
+                if (positionScrollbar > scrollbarEndLimit) {
                     positionScrollbar = scrollbarEndLimit;
                     scroll.style.transform = "translateY(" + ((finalLimit - windowHeight) * -1) + "px)";
-                }else if(positionScrollbar < scrollbarStartLimit ){
+                } else if (positionScrollbar < scrollbarStartLimit) {
                     positionScrollbar = scrollbarStartLimit;
                     scroll.style.transform = "translateY(0px)";
-                }else{
+                } else {
                     //variable para calcular el porcentaje relativo entre la distancia recorrida por la barra de scroll y el contenido de la web
                     const percentage = (scrollbar.getBoundingClientRect().top * 100) / realScrollWrapperHeight;
                     console.log('percentage ', percentage)
-                    equivalentPercentage = - ((percentage * (finalLimit - windowHeight) ) / 100)
+                    equivalentPercentage = - ((percentage * (finalLimit - windowHeight)) / 100)
                     scroll.style.transform = "translateY(" + equivalentPercentage + "px)";
                 }
                 scrollbar.style.transform = "translateY(" + (positionScrollbar) + "px)";
@@ -267,7 +429,7 @@
         scroll.addEventListener("DOMMouseScroll", cancelScroll);
         scroll.addEventListener("wheel", cancelScroll);
 
-        
+
         //scroll.addEventListener("wheel", scrollFunctionality);
         scroll.addEventListener("wheel", smooth);
         scrollbar.addEventListener("mousedown", getStartCoordinates);
@@ -276,7 +438,7 @@
         window.addEventListener("mousemove", getActualCoordinates);
 
         //evento para cambiar la altura del scrollwrapper cuando el tamaño de la pantalla varíe
-        window.addEventListener("resize", ()=>{
+        window.addEventListener("resize", () => {
             windowHeight = window.innerHeight;
             finalLimit = document.body.scrollHeight;
             scrollValue = (finalLimit - windowHeight) / timesToReach;
@@ -286,6 +448,7 @@
 
     </script>
 </body>
+
 </html>
 
 <!--
