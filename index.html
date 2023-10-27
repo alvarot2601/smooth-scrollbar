@@ -343,9 +343,19 @@
         const scrollbarStartLimit = 0;
         //variable encargada de definir la mayor coordenada a la que puede acceder la barra de scroll
         const scrollbarEndLimit = realScrollWrapperHeight;
+        const debounce = (func, delay) => {
+            let timeoutId;
+            return function (...args) {
+                const context = this;
 
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func.apply(context, args);
+                }, delay);
+            };
+        };
 
-        const smooth = (e) => {
+        const smooth = debounce((e) => {
             actualTopCoord = scroll.getBoundingClientRect().top;
             if (e.wheelDelta < 0 && y <= initialLimit) {
                 y += -scrollValue;
@@ -369,7 +379,7 @@
             //scrollbar.style.transform = "translateY(" + ((realScrollWrapperHeight*relativePercentage) / 100) + "px)";
             scrollbar.style.transition = "transform 2s";
             scrollbar.style.transform = "translateY(" + relativeScrolledValue + "px)"
-        }
+        }, 10);
 
 
 
