@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow:hidden;
+            height: 100%;
+            position: fixed;    
+            top:0;
+            left:0;
+        }
+        .scroll{
+            
+            border: 5px solid black;
+            overflow:hidden;
+        }
+        .scroll{
+            transition: transform 1.5s;
+        }
+
+        #scrollbar{
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: black;
+        }
+        #scrollbar:hover{
+            cursor:pointer;
+        }
+        #scrollbar-wrapper{
+            padding:0px 2px;
+            position: fixed;
+            right: 0;
+            top:0;
+            height: 100%;
+            width: 15px;
+            
+            background-color: grey;
+        }
+        #scrollbar-wrapper2{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="smooth-wrapper">
+        <div class="scroll">
+            <p>
+                ¿Qué es Lorem Ipsum?<br>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            <br>
+            ¿Por qué lo usamos?<br>
+            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+            <br>
+        
+            ¿De dónde viene?<br>
+            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+            <br>
+            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+            <br>
+            ¿Dónde puedo conseguirlo?<br>
+            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
+                </p>
+                <p>
+                    ¿Qué es Lorem Ipsum?<br>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            <br>
+            ¿Por qué lo usamos?<br>
+            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+            <br>
+        
+            ¿De dónde viene?<br>
+            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+            <br>
+            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+            <br>
+            ¿Dónde puedo conseguirlo?<br>
+            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
+                </p>
+                <p>
+                    ¿Qué es Lorem Ipsum?<br>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            <br>
+            ¿Por qué lo usamos?<br>
+            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+            <br>
+        
+            ¿De dónde viene?<br>
+            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+            <br>
+            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+            <br>
+            ¿Dónde puedo conseguirlo?<br>
+            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
+                </p>
+                <p>
+                    ¿Qué es Lorem Ipsum?<br>
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            <br>
+            ¿Por qué lo usamos?<br>
+            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+            <br>
+        
+            ¿De dónde viene?<br>
+            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+            <br>
+            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+            <br>
+            ¿Dónde puedo conseguirlo?<br>
+            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
+            dasdasdsssssssssssssssssssssssssssssssssssssss sssssssssssss ssddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddd</p>
+            ¿Por qué lo usamos?<br>
+            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+            <br>
+        
+            ¿De dónde viene?<br>
+            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
+            <br>
+            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+            <br>
+            ¿Dónde puedo conseguirlo?<br>
+            Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.
+            dasdasdsssssssssssssssssssssssssssssssssssssss sssssssssssss ssddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddd
+            <br>
+            asddddddddddddddddddddddddd
+        </div>
+    </div>
+    <div id="scrollbar-wrapper">
+        <div id="scrollbar-wrapper2">
+            <div id="scrollbar"></div>
+        </div>
+    </div>
+    <script>
+        const scroll = document.querySelector('.scroll');
+        let y = 0;
+        let actualCoordY = scroll.getBoundingClientRect().top;
+        const initialCoordY = scroll.getBoundingClientRect().top;
+        const initialLimit = 0;
+        let finalLimit = document.body.scrollHeight;
+
+        let windowHeight = window.innerHeight;
+        const actualPercentage = 0;
+        const actualYCoord = 1;
+        const scrollbar = document.getElementById("scrollbar");
+        const initialBottomCoord = scroll.getBoundingClientRect().bottom;
+        let actualTopCoord = scroll.getBoundingClientRect().top;
+        //variable la cual indica el total de scrolls necesarios para llegar al final del documento (con la rueda del raton)
+        const timesToReach = 20;
+        let scrollValue = (finalLimit - windowHeight) / timesToReach;
+
+        //variable que almacena la altura de la barra de scroll
+        const scrollBarHeight = 100;
+
+        //altura real del contenedor de la barra de scroll
+        const realScrollWrapperHeight = windowHeight - scrollBarHeight;
+
+        //asignamos al cargar la pagina el height del wrapper de la scrollbar
+        const scrollbarWrapper = document.getElementById("scrollbar-wrapper");
+        scrollbarWrapper.style.height = windowHeight + "px";
+
+        let relativePercentage = (windowHeight - scrollBarHeight) / timesToReach;
+        let relativeScrolledValue = 0;
+
+        //variables para almacenar las coordenadas del inicio y fin del scroll al pulsar sobre la scrollbar. Almacena la coordenada y desde que se pulsa el raton hasta que se suelta
+        let startCoordinates, endCoordinates;
+
+        //variable encargada de definir la minima coordenada a la que puede acceder la barra de scroll
+        const scrollbarStartLimit = 0;
+        //variable encargada de definir la mayor coordenada a la que puede acceder la barra de scroll
+        const scrollbarEndLimit = realScrollWrapperHeight;
+
+
+        const smooth = (e) => {            
+            actualTopCoord = scroll.getBoundingClientRect().top;
+            if(e.wheelDelta < 0 && y <= initialLimit){
+                y += -scrollValue;
+                relativeScrolledValue += relativePercentage;
+                if(Math.abs(y) + windowHeight  > finalLimit){
+                   y = - (finalLimit - windowHeight); 
+                   relativeScrolledValue = windowHeight - 100;
+                }
+            }else if(e.wheelDelta > 0 && Math.abs(y) < finalLimit && y < 0){
+                y+= scrollValue;
+                relativeScrolledValue -= relativePercentage;
+                if(y>0){
+                    y = 0;
+                    relativeScrolledValue = 0;
+                }
+            }
+            scroll.style.transitionProperty = "transform";
+            scroll.style.transform = "translateY(" + y + "px)";
+            //relativePercentage = (Math.abs(actualTopCoord) * 100) / initialBottomCoord;
+            console.log(relativeScrolledValue)
+           //scrollbar.style.transform = "translateY(" + ((realScrollWrapperHeight*relativePercentage) / 100) + "px)";
+           scrollbar.style.transition = "transform 2s";
+           scrollbar.style.transform = "translateY(" + relativeScrolledValue + "px)"
+        }
+
+
+        
+
+        //variable para controlar si está pulsado la scrollbar
+        let continueScrolling = false;
+        //variable para que al pulsar sobre la scrollbar no se pongan en paralelo en las misma coordenada Y que el raton
+        let scrollbarDifference = 0;
+        const getStartCoordinates = (e) => {
+            continueScrolling=true;
+            startCoordinates = e.clientY;
+            scrollbarDifference = parseInt(e.clientY) - parseInt(scrollbar.getBoundingClientRect().top);
+        }
+
+        const getEndCoordinates = (e) => {
+            endCoordinates = e.clientY;
+            continueScrolling = false;
+        }
+        
+        let equivalentPercentage;
+        const getActualCoordinates = (e) => {
+            if(continueScrolling==true){
+                let positionScrollbar = 0;
+                scrollbar.style.transitionProperty = "none";
+                scroll.style.transitionProperty = "none";
+                positionScrollbar = (parseInt(e.clientY) - scrollbarDifference);
+                //realizo las comprobaciones pertinentes
+                if(positionScrollbar > scrollbarEndLimit){
+                    positionScrollbar = scrollbarEndLimit;
+                    scroll.style.transform = "translateY(" + ((finalLimit - windowHeight) * -1) + "px)";
+                }else if(positionScrollbar < scrollbarStartLimit ){
+                    positionScrollbar = scrollbarStartLimit;
+                    scroll.style.transform = "translateY(0px)";
+                }else{
+                    //variable para calcular el porcentaje relativo entre la distancia recorrida por la barra de scroll y el contenido de la web
+                    const percentage = (scrollbar.getBoundingClientRect().top * 100) / realScrollWrapperHeight;
+                    console.log('percentage ', percentage)
+                    equivalentPercentage = - ((percentage * (finalLimit - windowHeight) ) / 100)
+                    scroll.style.transform = "translateY(" + equivalentPercentage + "px)";
+                }
+                scrollbar.style.transform = "translateY(" + (positionScrollbar) + "px)";
+
+                //para guardar las coordenadas y utilizarlas a la hora de hacer scroll utilizando la rueda del mouse
+                relativeScrolledValue = scrollbar.getBoundingClientRect().top;
+
+                y = equivalentPercentage;
+            }
+        }
+
+        const cancelScroll = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+
+        scroll.addEventListener("mousewheel", cancelScroll);
+        scroll.addEventListener("DOMMouseScroll", cancelScroll);
+        scroll.addEventListener("wheel", cancelScroll);
+
+        
+        //scroll.addEventListener("wheel", scrollFunctionality);
+        scroll.addEventListener("wheel", smooth);
+        scrollbar.addEventListener("mousedown", getStartCoordinates);
+        window.addEventListener("mouseup", getEndCoordinates);
+        //añado mousemove al object window para que el usuario pueda seguir haciendo scroll sin tener el raton sobre la scrollbar
+        window.addEventListener("mousemove", getActualCoordinates);
+
+        //evento para cambiar la altura del scrollwrapper cuando el tamaño de la pantalla varíe
+        window.addEventListener("resize", ()=>{
+            windowHeight = window.innerHeight;
+            finalLimit = document.body.scrollHeight;
+            scrollValue = (finalLimit - windowHeight) / timesToReach;
+            scrollbarWrapper.style.height = windowHeight + 'px';
+            relativePercentage = (windowHeight - scrollBarHeight) / timesToReach;
+        })
+
+    </script>
+</body>
+</html>
+
+<!--
+ if((scrollbar.getBoundingClientRect().top) > scrollbarEndLimit){
+                    scrollbar.style.transform = "translateY(" + (scrollbarEndLimit-1) + "px)";
+                    scroll.style.transform = "translateY(" + ((finalLimit - windowHeight) * -1) + "px)";
+                }else if(scrollbar.getBoundingClientRect().top < scrollbarStartLimit ){
+                    scrollbar.style.transform = "translateY(" + scrollbarStartLimit + "px)";
+                    scroll.style.transform = "translateY(0px)";
+                }
+                else{
+
+                    const positionScrollbar = (parseFloat(e.clientY) - scrollbarDifference) < scrollbarStartLimit ? scrollbarStartLimit
+                    : (parseFloat(e.clientY) - scrollbarDifference);
+
+                    if(positionScrollbar > scrollbarEndLimit){
+                        positionScrollbar = scrollbarEndLimit;
+                        scroll.style.transform = "translateY(" + ((finalLimit - windowHeight) * -1) + "px)";
+                    }else if(positionScrollbar < scrollbarStartLimit){
+                        positionScrollbar = scrollbarStartLimit;
+                        scroll.style.transform = "translateY(0px)";
+                    }else{
+                        const percentage = (scrollbar.getBoundingClientRect().top * 100) / realScrollWrapperHeight;
+                        const equivalentPercentage = - ((percentage * (finalLimit - windowHeight) ) / 100)
+                        scroll.style.transform = "translateY(" + equivalentPercentage + "px)";
+                    }
+                    
+                    //variable para calcular el porcentaje relativo entre la distancia recorrida por la barra de scroll y el contenido de la web
+                    
+                    
+                    scrollbar.style.transform = "translateY(" + (positionScrollbar) + "px)";
+                    
+                    
+                    
+                }
+                if(scrollbar.getBoundingClientRect().top > scrollbarEndLimit) scrollbar.style.transform = "translateY(" + (scrollbarEndLimit) + "px)";
+                
+                
+                
+                
+                
+                
+                otro
+                
+                
+                
+                
+                 const positionScrollbar = (parseFloat(e.clientY) - scrollbarDifference) < scrollbarStartLimit ? scrollbarStartLimit
+                    : (parseFloat(e.clientY) - scrollbarDifference);
+                    scrollbar.style.transform = "translateY(" + (positionScrollbar) + "px)";
+                    //realizo las comprobaciones pertinentes
+                    if((scrollbar.getBoundingClientRect().top) > scrollbarEndLimit){
+                        scrollbar.style.transform = "translateY(" + (scrollbarEndLimit-1) + "px)";
+                        scroll.style.transform = "translateY(" + ((finalLimit - windowHeight) * -1) + "px)";
+                    }else if(scrollbar.getBoundingClientRect().top < scrollbarStartLimit ){
+                        positionScrollbar = scrollbarStartLimit;
+                        scroll.style.transform = "translateY(0px)";
+                    }else{
+                        const percentage = (scrollbar.getBoundingClientRect().top * 100) / realScrollWrapperHeight;
+                        const equivalentPercentage = - ((percentage * (finalLimit - windowHeight) ) / 100)
+                        scroll.style.transform = "translateY(" + equivalentPercentage + "px)";
+                    }-->
